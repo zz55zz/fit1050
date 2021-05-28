@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--
+Template Name: Algenius
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<head>
+<title>Fast</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+  .login-page{
+    width: 360px;
+    position: absolute;
+    z-index: 100;
+    top: 52px;
+    right: 10%;
+
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background: rgba(7,40,195,0.8);
+    max-width: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,.form button:active{
+    background: #43A047;
+
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+
+}
+
+.form .message a{
+    color: #4CAF50;
+    text-decoration: none;
+
+}
+
+.form .register-form{
+    display: none;
+}
+</style>
+
+
+
+</head>
+<body id="top">
+ 
+    <div class="login-page" id="login" style="display: none;">
+      <div class="form">
+        <form class="register-form">
+          <input type="text" placeholder="user name"/>
+          <input type="text" placeholder="password"/>
+          <input type="text" placeholder="email"/>
+          <button>create</button>
+          <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>
+        <form class="login-form">
+          <input type="text" placeholder="user name"/>
+          <input type="password" placeholder="password"/>
+          <button>login</button>
+          <p class="message">Not Registered? <a href="#">Register</a> </p>
+        </form>
+
+      </div>
+      
+    </div>
+     
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'>
+    </script>
+
+<script>
+  $('.message a').click(function(){
+    $('form').animate({height:"toggle", opacity:"toggle"},"slow");
+  });
+</script>
+
+    <script>
+     var box = document.getElementById('login');
+
+     function loginBox(){
+        box.style.display="block";
+     }
+    </script>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+      <li><i class="fa fa-clock-o"></i> Mon. - Fri. 8am - 5pm</li>
+    </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="#" onclick="loginBox()">Login</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </div>
+
+    
+    
+   
+
+
+
+
+
+    
+
+
+
+
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">FAST</a></h1>
+    </div>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a class="drop" href="#">History</a>
+        <ul>
+          <li><a href="#">1960s</a></li>
+          <li><a href="#">1980s</a></li>
+          <li><a href="#">2000s</a></li>
+          <li><a href="#">2020s</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">Stories</a>
+        <ul>
+          <li><a href="#">Rodney Mullen</a></li>
+          <li><a href="#">Paul Rodriguez</a></li>
+          <li><a href="#">Bucky Lasek</a></li>
+          <li><a href="#">Bob Burnquist</a></li>
+          <li><a href="#">Tony Hawk</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Skateboards</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+    <!-- ################################################################################################ --> 
+  </nav>
+  
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../Fast/images/demo/backgrounds/skateboard-1869727_1920.jpg');">
+  <article id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h3 class="heading">Burning passion, challenge the limit, beyond the self.</h3>
+    <p></p>
+    <footer><a class="btn" href="#" onclick="loginBox()">join us</a></footer>
+    <!-- ################################################################################################ --> 
+  </article>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body --> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-american-sign-language-interpreting"></i>
+          <h6 class="heading font-x1">Community interaction</h6>
+          <p class="btmspace-30">Skateboarding brings all kinds of people together, we help each other and achieve each other.[&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-resistance"></i>
+          <h6 class="heading font-x1">Personal value enhancement</h6>
+          <p class="btmspace-30">How you can achieve yourself, seeking excitement? Explore life? Come and try skateboarding![&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
+          <h6 class="heading font-x1">Information Protection</h6>
+          <p class="btmspace-30">Don’t be afraid to become one of us. The information protection measures of the entire club are very strict and effective.[&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ --> 
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../Fast/images/demo/backgrounds/skateboard-1091710.jpg');">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Club Events</h6>
+    </div>
+    <div class="group">
+      <div class="one_half first">
+        <p><strong>Street challenge</strong></p>
+        <p>We hold street competitions in different neighborhoods every month, aiming to provide people who love skateboarding with opportunities to show, break through themselves, make friends, and promote a good skateboarding atmosphere.</p>
+        <p class="btmspace-30">Take your skateboard, call your friends, and experience the ultimate carnival[&hellip;]</p>
+        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_half">
+        <p><strong>Dime Street Challenge 2018</strong></p>
+        <a href="#"><img src="../Fast/images/demo/Screen Shot 2021-05-26 at 1.00.54 pm.jpeg" alt=""></a>
+        <p>25 Sept 2018</p>
+      </div>
+    </div>
+    <!-- ################################################################################################ --> 
+  </section>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Area Experts</h6>
+    </div>
+    <div class="group testimonials">
+      <article class="one_half first"><img src="../Fast/images/demo/Amigos - Avatar (1).png" alt="">
+        <blockquote>After several injuries, Albert Brad won the World's Best Skateboard Award twice. He jumped on the high wall, jumped off the helicopter, and caught up with X games many times. Through all these achievements, Albert has completed enough rankings to become the best skateboarder ever to skate on the planet.</blockquote>
+        <h6 class="heading">Albert Brad</h6>
+      </article>
+      <article class="one_half"><img src="../Fast/images/demo/Amigos - Avatar.png" alt="">
+        <blockquote>He participated in 10 X games and was seriously injured. There is no doubt that he is one of the most decorated and dedicated skateboarders around. He once appeared on the cover of ESPN magazine! In addition, he is not only very famous in the skateboarding industry, but also in the cross-country rally car industry.</blockquote>
+        <h6 class="heading">Chelsea Smith</h6>
+      </article>
+    </div>
+    <!-- ################################################################################################ --> 
+  </section>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../Fast/images/demo/backgrounds/guy-2606789_1920.jpg');">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Our Members</h6>
+    </div>
+    <div class="group team">
+      <figure class="one_quarter first"><a href="#"><img src="../Fast/images/demo/Dayflow - Avatar (4).png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Elena Green</h6>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="../Fast/images/demo/Dayflow - Avatar (5).png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Leo Vergara</h6>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="../Fast/images/demo/Dayflow - Avatar (4) copy.png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Diana Hall</h6>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a href="#"><img src="../Fast/images/demo/Dayflow - Avatar (7).png" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Sam Burnett</h6>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <figure class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="nospace group logos">
+      <li class="one_quarter first"></li>
+      <li class="one_quarter"></li>
+      <li class="one_quarter"></li>
+      <li class="one_quarter"></li>
+    </ul>
+    <!-- ################################################################################################ --> 
+  </figure>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row4 bgded overlay" style="background-image:url('../Fast/images/demo/backgrounds/still-2609155_1920.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h6 class="heading">Connect Details</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Flinder Street &amp; 10, Melbourne, 2084
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +00 (123) 8734 9837</li>
+        <li><i class="fa fa-fax"></i> +00 (123) 8734 9837</li>
+        <li><i class="fa fa-envelope-o"></i> 1592683462@gmail.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Send me emails about the community.</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">More Information</h6>
+      <figure><a href="#"><img class="borderedbox inspace-10 btmspace-15" src="../Fast/images/demo/backgrounds/sports-4408835_1920.jpg" alt=""></a>
+        <figcaption>
+          <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2021</time>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.fitvids.js"></script>
+</body>
+</html>
